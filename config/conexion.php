@@ -7,7 +7,7 @@ class Conectar{
     protected function Conexion(){
 
         try{
-           $conectar=$this->dbh=new PDO("mysql:host=mysql;dbname=API" , "root" ,"admin");
+           $conectar=$this->dbh=new PDO("mysql:host=dbtest002.mysql.database.azure.com;dbname=apidb" , "azadmin" ,"Nw9205stb$");
            return $conectar;
         }catch(Exception $e){
 
